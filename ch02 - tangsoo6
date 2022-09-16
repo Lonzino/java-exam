@@ -1,0 +1,13 @@
+package ch02;
+
+public class tangsoo6 {
+	public static void main(String[] args) {
+		
+		boolean isboomuk;
+		isboomuk = true;
+				
+		System.out.println("당신은 부먹파입니까?");
+		System.out.println(isboomuk);
+	}
+
+}
