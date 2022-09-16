@@ -1,0 +1,18 @@
+package kimjinho;
+
+public class exam {
+
+	public static void main(String[] args) {
+		int midscore;
+		int finalscore;
+		
+		midscore = 68;
+		finalscore = 78;
+		
+		System.out.println("학기 전 진호의 중간 점수:");
+		System.out.println(midscore);
+		System.out.println("학기 전 진호의 기말 점수:");
+		System.out.println(finalscore);
+	}
+
+}
