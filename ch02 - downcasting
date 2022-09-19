@@ -1,0 +1,15 @@
+package ch02;
+
+public class Downcasting {
+
+	public static void main(String[] args) {
+		
+		Double tall = 170.6;
+		Double weight = 73.6;
+		
+		System.out.printf("신장: %dcm\n", (int)tall);
+		System.out.printf("체중: %dkg\n", (int)weight);
+
+	}
+
+}
