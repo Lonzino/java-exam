@@ -1,0 +1,18 @@
+package ch02;
+
+public class Stringtonumber {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String strseven = "7";
+		String strpi = "3.14";
+		
+		int a = Integer.parseInt(strseven);
+		double b = Double.parseDouble(strpi);
+		
+		double c = a + b;
+
+		System.out.printf("%d + %.2f = %.2f", a, b, c);
+	}
+
+}
