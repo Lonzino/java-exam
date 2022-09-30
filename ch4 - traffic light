@@ -15,13 +15,13 @@ public class Trafficlight {
 			System.out.println("빨간 불이 켜집니다.");
 			break;
 		case "YELLOW":
-			System.out.println("빨간 불이 켜집니다.");
+			System.out.println("노란 불이 켜집니다.");
 			break;
 		case "GREEN":
-			System.out.println("빨간 불이 켜집니다.");
+			System.out.println("초록 불이 켜집니다.");
 			break;
 		default:
-			System.out.println("ㅇ에러, 잘못된 색 입력: %s\n", color);
+			System.out.printf("에러, 잘못된 색 입력: %s\n", color);
 			
 		}
 		
