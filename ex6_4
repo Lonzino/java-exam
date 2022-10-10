@@ -1,0 +1,20 @@
+package ch06;
+
+public class ex06_04 {
+
+	public static void main(String[] args) {
+		
+		int[] runnigmin = {42, 66, 57, 54, 88, 64, 71};
+		int sum = 0;
+		
+		
+		for (int i = 0; i < runnigmin.length; i++) {
+			sum += runnigmin[i];
+		}
+		
+		double average = (double) sum / runnigmin.length;
+		System.out.printf("총합: %d\n", sum);
+
+	}
+
+}
