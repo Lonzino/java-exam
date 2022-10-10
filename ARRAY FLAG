@@ -1,0 +1,15 @@
+package ch06;
+
+public class arrayflag {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+			double average = (double) 442/7;
+			double x = average % 1;
+			System.out.println(average);
+			System.out.println(x);
+			System.out.println(60*(average%1));
+			System.out.printf("평균: %d분 %.0f초 \n", (int)average, 60*(average%1));
+	}
+
+}
