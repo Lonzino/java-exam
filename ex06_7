@@ -1,0 +1,21 @@
+package ch06;
+
+public class CH07 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String str = "programming is fun! right?";
+		char[] charArr = str.toCharArray();
+		int count =0;
+		
+		for(int i =0; i<charArr.length; i++) {
+			if(charArr[i] == 'R' || charArr[i] == 'r') {
+				count++;
+			}
+		}
+	System.out.println(str);
+	System.out.printf("=>R(r)의 개수: %d", count);
+	}
+
+}
