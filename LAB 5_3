@@ -1,0 +1,27 @@
+package exam;
+
+public class lab5_3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		printTmtable();
+	}
+	public static void printTmtable(){
+		printRow(2);
+		printRow(3);
+		printRow(4);
+		printRow(5);
+		printRow(6);
+		printRow(7);
+		printRow(8);
+		printRow(9);
+	}
+	public static void printRow(int row) {
+		System.out.printf("%d단\n", row);
+		for (int i = 1; i<= 9; i++) {
+			System.out.printf("\t");
+			System.out.printf("%d * %d =%d\n", row, i, row * i);
+		}
+	}
+	
+}
