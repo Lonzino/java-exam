@@ -1,0 +1,28 @@
+package ts01;
+
+import java.util.ArrayList;
+
+
+public class arraylist {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 	ArrayList<String> names= new ArrayList<String>();
+			
+			names.add("kim");
+			names.add("lee");
+			names.add("park");
+			names.add("choi");
+			
+			names.set(0, "han");
+			String removed = names.remove(1);
+			
+			
+			
+			for (int i = 0; i < names.size(); i++) {
+				System.out.printf("%s\n", names.get(i));	
+			}
+			
+	}
+
+}
