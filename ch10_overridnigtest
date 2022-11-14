@@ -1,0 +1,24 @@
+
+public class overridingtest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		archer a = new archer();
+		archer ma = (archer) new masterarcher();
+		a.shoot();
+		ma.shoot();
+	}
+
+}
+
+class archer{
+	void shoot() {
+		System.out.println("아처의 활 공격이 10만큼의 피해를 주었습니다.");
+	}
+}
+
+class masterarcher extends archer{
+	void shoot() {
+		System.out.println("마스터아처의 활 공격이 30만큼의 피해를 주었습니다.");
+	}
+}
