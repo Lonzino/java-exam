@@ -1,0 +1,38 @@
+
+public class animaltest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		tiger t = new tiger();
+		lion l = new lion();
+		dog d = new dog();
+		cat c = new cat();
+		animal[] animals = {t,l,d,c};
+		for (int i = 0; i < animals.length; i++) {
+			animals[i].cry();
+		}
+	}
+
+}
+
+abstract class animal{
+	String name;
+	void cry() {System.out.println("동물이 웁니다");}
+}
+
+class tiger extends animal{
+	void cry() {System.out.println("어흥");}
+}
+
+
+class lion extends animal{
+	void cry() {System.out.println("어흥");}
+}
+
+class dog extends animal{
+	void cry() {System.out.println("어흥");}
+}
+
+class cat extends animal{
+	void cry() {System.out.println("어흥");}
+}
