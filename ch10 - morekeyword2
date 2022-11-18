@@ -4,30 +4,30 @@ public class morekeywords {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		weapon w1 = new weapon("잗검", 1200, 10));
-		weapon w2 = new weapon;
+		weapon w1 = new weapon("잗검", 1200, 10);
+		weapon w2 = new weapon();
 		w1.printinfo();
 		w2.printinfo();		
 				
-		System.out.printf("[%s](%d골드)생성완료", item2.name, item2.price);
 	}
 
 }
 
-abstract class Item{
+abstract class item{
 	String name;
 	int price;
-	Item(String name, int price){
+	item(String name, int price){
 		this.name = name;
 		this.price = price;
 	}
-	Item(){
-		this("이름없음", -1);
+	item(){
+		this.name = "이름없음";
+		this.price= -1;
 	}
 }
 class weapon extends item{
 	int power;
-	Item(String name, int price, int power){
+	weapon(String name, int price, int power){
 		super(name, price);
 		this.power = power;
 	}
@@ -35,7 +35,7 @@ class weapon extends item{
 		super();
 		this.power = -1;
 	}
-	void printinfo{
+	void printinfo(){
 		System.out.printf("[%s]가격: %d골드, 공격력: %d\n", super.name, super.price, this,power);
 	}
 }
