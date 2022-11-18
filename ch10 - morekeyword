@@ -1,0 +1,24 @@
+package ch10;
+
+public class morekeywords {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Item item2 = new Item();
+		System.out.printf("[%s](%d골드)생성완료", item2.name, item2.price);
+	}
+
+}
+
+class Item{
+	String name;
+	int price;
+	
+	Item(String name, int price){
+		this.name = name;
+		this.price = price;
+	}
+	Item(){
+		this("이름없음", -1);
+	}
+}
