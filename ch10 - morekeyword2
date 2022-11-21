@@ -1,10 +1,9 @@
 package ch10;
 
 public class morekeywords {
-
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		weapon w1 = new weapon("잗검", 1200, 10);
+		weapon w1 = new weapon("장검", 1200, 10);
 		weapon w2 = new weapon();
 		w1.printinfo();
 		w2.printinfo();		
@@ -36,6 +35,6 @@ class weapon extends item{
 		this.power = -1;
 	}
 	void printinfo(){
-		System.out.printf("[%s]가격: %d골드, 공격력: %d\n", super.name, super.price, this,power);
+		System.out.printf("[%s]가격: %d골드, 공격력: %d\n", super.name, super.price, this.power);
 	}
 }
