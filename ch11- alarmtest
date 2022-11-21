@@ -1,0 +1,27 @@
+package ch11;
+
+public class alarmtest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+			alarm a = new smartphone();
+			a.playmusic("상어송");
+			a.beep();
+	}
+
+}
+
+interface alarm{
+	void playmusic(String title);
+	void beep();
+}
+
+class smartphone implements alarm{
+	private String phonenumber;
+	public void playmusic(String title) {
+		System.out.printf("[%s]이 재생됩니다..\n", title);
+	}
+	public void beep() {
+		System.out.printf("비프음이 재생됩니다. 삐빕~ 삐비비빕!");
+	}
+}
