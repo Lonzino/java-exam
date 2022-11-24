@@ -1,0 +1,48 @@
+package ch07;
+
+public class move {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+			amovie am = new amovie("범죄도시");
+			hmovie hm = new hmovie("여고괴담");
+			cmovie cm = new cmovie("극한직업");
+			int sum = 0;
+			sum += am.discountPrice();
+			sum += hm.discountPrice();
+			sum += cm.discountPrice();
+			System.out.printf("총 예매금액: %d원", sum);
+	}
+
+}
+
+abstract class movie{
+	protected String name;
+	protected int Price = 10000;
+	protected double discountRate = 0.1;
+	public movie(String name) {
+		this.name = name;
+	}
+	public double discountPrice() {
+		return Price*(1-discountRate);
+	}
+}
+
+class amovie extends movie{
+	public amovie(String name) {
+		super(name);
+	}
+}
+
+class hmovie extends movie{
+	public hmovie(String name) {
+		super(name);
+	}
+}
+
+class cmovie extends movie{
+	public cmovie(String name) {
+		super(name);
+	}
+}
+
