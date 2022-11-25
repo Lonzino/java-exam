@@ -1,0 +1,41 @@
+package ch11;
+
+public class dmt {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+			
+		vehicle b = new bicycle();
+		vehicle t = new train();
+		b.horn();
+		t.horn();
+		b.move("명동", "신촌");
+		b.move("서울 ", "부산");
+	}
+
+}
+
+interface vehicle{
+	void horn();
+	default public void move(String from, String to) {
+		System.out.printf("%s에서 %s로", from, to);
+	}
+}
+
+class bicycl implements vehicle{
+	public void horn() {
+		System.out.println("따르릉");
+	}
+}
+
+class train implements vehicle{
+	public void horn() {
+		System.out.println("뿌우");
+	}
+	public void move(String from, String to) {
+		System.out.printf("기차가 %s에서 %s로 이동합니다", from, to );
+	}
+}
+	
+
+
