@@ -1,0 +1,26 @@
+package ch11;
+
+import java.util.ArrayList;
+
+public class uncheckedexception {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+			try {
+				throw new MyException("예외");
+			}catch(MyException ex) {
+				System.out.printf("예외 메세지: %s\n", ex.getMessage());
+			}
+	}
+
+}
+
+class MyException extends Exception{
+	public MyException() {
+		super("내가 만든 예외 발생");
+	}
+	public MyException(String message) {
+		super(message);
+	}
+}
+
