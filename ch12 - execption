@@ -1,0 +1,19 @@
+package ch11;
+
+public class exept {
+	public static void main(String[] args) {
+		String[] names = {"kim", "lee", "park", "choi"};
+		try {
+			System.out.printf("0번 인덱스 요소:%s\n", names[0]);
+			System.out.printf("4번 인덱스 요소:%s\n", names[4]);
+			System.out.printf("3번 인덱스 요소:%s\n", names[3]);
+		}catch (ArrayIndexOutOfBoundsException ex) {
+			System.out.println("인덱스 접근이 잘 못 되었습니다.");	// try문의 변수타입을 잡아라 기말은 부분부분
+		}finally {
+			System.out.println("finally 문은 예외 발생과 상관없이 항상 수행됩니다.");	
+		}
+		
+		System.out.println("프로그램 종료!");
+
+	}
+}
