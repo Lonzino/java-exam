@@ -1,0 +1,25 @@
+package ch11;
+
+import java.util.Scanner;
+
+public class exception3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scanner = new Scanner(System.in);
+		try {
+			System.out.printf("10을 x로 나누려 한다.\nx의 값을 입력:");
+			String inputstr = scanner.next();
+			int inputnum = Integer.parseInt(inputstr);
+			
+			int result = 10 / inputnum;
+			System.out.printf("10나누기 %d => %d\n", inputnum, result);
+		}catch(NumberFormatException ex) {
+			System.out.println("정수변환에 실패하였습니다");
+		}catch(ArithmeticException e) {
+			System.out.println("0으로 나눌 수 없습니다.");
+		}
+		System.out.println("종료");
+	}
+
+}
